@@ -1,0 +1,35 @@
+{% extends "gift/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h2 class="section-title fade-in">Какая ты? 🌟</h2>
+        <p class="section-subtitle fade-in">Вот что я вижу в тебе</p>
+
+        <div class="cards-grid">
+            <div class="card glass fade-in" style="--delay: 0.1s">
+                <div class="card-icon">🌷</div>
+                <h3 class="card-title">Добрая</h3>
+                <p class="card-text">Ты умеешь делать людям рядом с тобой теплее.</p>
+            </div>
+
+            <div class="card glass fade-in" style="--delay: 0.2s">
+                <div class="card-icon">💬</div>
+                <h3 class="card-title">Общительная</h3>
+                <p class="card-text">С тобой всегда можно найти тему для разговора.</p>
+            </div>
+
+            <div class="card glass fade-in" style="--delay: 0.3s">
+                <div class="card-icon">✨</div>
+                <h3 class="card-title">Особенная</h3>
+                <p class="card-text">Некоторых людей просто невозможно заменить.</p>
+            </div>
+        </div>
+
+        <div class="section-nav fade-in">
+            <a href="{% url 'gift:story' %}" class="btn btn-primary">Наша история ➜</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

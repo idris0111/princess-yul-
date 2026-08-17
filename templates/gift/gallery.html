@@ -1,0 +1,39 @@
+{% extends "gift/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h2 class="section-title fade-in">Галерея 📸</h2>
+        <p class="section-subtitle fade-in">Наши моменты</p>
+
+        {% if photos %}
+        <div class="gallery-grid">
+            {% for photo in photos %}
+            <div class="gallery-item glass fade-in" style="--delay: {{ forloop.counter0 }}0.1s">
+                <div class="gallery-image">
+                    <img src="{{ photo.image.url }}" alt="{{ photo.title }}">
+                </div>
+                <div class="gallery-info">
+                    <h3 class="gallery-title">{{ photo.title }}</h3>
+                    {% if photo.description %}
+                    <p class="gallery-text">{{ photo.description }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="gallery-empty glass fade-in">
+            <div class="gallery-empty-icon">📷</div>
+            <p class="gallery-empty-text">Здесь скоро появятся наши фотографии ❤️</p>
+            <p class="gallery-empty-hint">Добавь фото через <a href="/admin/">админку</a></p>
+        </div>
+        {% endif %}
+
+        <div class="section-nav fade-in">
+            <a href="{% url 'gift:quiz' %}" class="btn btn-primary">Мини-игра ➜</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

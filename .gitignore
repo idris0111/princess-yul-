@@ -1,0 +1,11 @@
+db.sqlite3
+__pycache__/
+*.pyc
+*.pyo
+media/
+.env
+*.egg-info/
+dist/
+build/
+.vscode/
+.idea/

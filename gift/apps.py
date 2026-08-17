@@ -1,0 +1,7 @@
+from django.apps import AppConfig
+
+
+class GiftConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'gift'
+    verbose_name = 'Подарок для Юл'

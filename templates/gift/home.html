@@ -1,0 +1,24 @@
+{% extends "gift/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+    <div class="stars" id="stars"></div>
+    <div class="hero-content fade-in">
+        <h1 class="hero-title">Юл ✨</h1>
+        <p class="hero-subtitle">Я сделал этот маленький мир специально для тебя.</p>
+        <p class="hero-text">Для самой доброй, общительной и особенной принцессы.</p>
+        <a href="{% url 'gift:qualities' %}" class="btn btn-primary pulse">
+            Открыть мой подарок ❤️
+        </a>
+    </div>
+    <div class="floating-hearts">
+        <span class="float-heart" style="--delay: 0s; --x: 10%;">❤️</span>
+        <span class="float-heart" style="--delay: 1s; --x: 25%;">💜</span>
+        <span class="float-heart" style="--delay: 2s; --x: 40%;">✨</span>
+        <span class="float-heart" style="--delay: 0.5s; --x: 60%;">💕</span>
+        <span class="float-heart" style="--delay: 1.5s; --x: 75%;">🌷</span>
+        <span class="float-heart" style="--delay: 2.5s; --x: 90%;">💖</span>
+    </div>
+</section>
+{% endblock %}

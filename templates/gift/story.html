@@ -1,0 +1,65 @@
+{% extends "gift/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h2 class="section-title fade-in">Наша история 📖</h2>
+        <p class="section-subtitle fade-in">Маленький путь, который мы прошли вместе</p>
+
+        <div class="timeline">
+            <div class="timeline-item fade-in" style="--delay: 0.1s">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass">
+                    <span class="timeline-chapter">Глава 1</span>
+                    <h3 class="timeline-title">Как всё началось</h3>
+                    <p class="timeline-text">
+                        <!-- Впиши сюда, как вы познакомились -->
+                        Место для твоего воспоминания о нашем начале...
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="--delay: 0.2s">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass">
+                    <span class="timeline-chapter">Глава 2</span>
+                    <h3 class="timeline-title">Наши разговоры</h3>
+                    <p class="timeline-text">
+                        <!-- Впиши сюда о ваших разговорах -->
+                        Место для твоего воспоминания о том, как мы разговаривали...
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="--delay: 0.3s">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass">
+                    <span class="timeline-chapter">Глава 3</span>
+                    <h3 class="timeline-title">Моменты, которые я запомнил</h3>
+                    <p class="timeline-text">
+                        <!-- Впиши сюда особенные моменты -->
+                        Место для твоего воспоминания о важных моментах...
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="--delay: 0.4s">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass">
+                    <span class="timeline-chapter">Глава 4</span>
+                    <h3 class="timeline-title">Сегодня</h3>
+                    <p class="timeline-text">
+                        <!-- Впиши сюда о настоящем -->
+                        Сегодня я制作ил этот сайт специально для тебя. Каждая страница здесь — это подарок для тебя...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-nav fade-in">
+            <a href="{% url 'gift:gallery' %}" class="btn btn-primary">Галерея ➜</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

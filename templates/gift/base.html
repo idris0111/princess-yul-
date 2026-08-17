@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Юл ✨</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="{% url 'gift:home' %}" class="nav-logo">Юл ✨</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="{% url 'gift:home' %}">Главная</a></li>
+                <li><a href="{% url 'gift:qualities' %}">Какая ты?</a></li>
+                <li><a href="{% url 'gift:story' %}">Наша история</a></li>
+                <li><a href="{% url 'gift:gallery' %}">Галерея</a></li>
+                <li><a href="{% url 'gift:quiz' %}">Мини-игра</a></li>
+                <li><a href="{% url 'gift:final' %}">Для тебя</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <button class="music-btn" id="musicBtn" title="Включить музыку">🎵</button>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
