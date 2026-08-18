@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Юл ✨</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Юл ✨</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="qualities.html">Какая ты?</a></li>
+                <li><a href="story.html">Наша история</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="quiz.html">Мини-игра</a></li>
+                <li><a href="final.html">Для тебя</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="stars" id="stars"></div>
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Юл ✨</h1>
+                <p class="hero-subtitle">Я сделал этот маленький мир специально для тебя.</p>
+                <p class="hero-text">Для самой доброй, общительной и особенной принцессы.</p>
+                <a href="qualities.html" class="btn btn-primary pulse">
+                    Открыть мой подарок ❤️
+                </a>
+            </div>
+            <div class="floating-hearts">
+                <span class="float-heart" style="--delay: 0s; --x: 10%;">❤️</span>
+                <span class="float-heart" style="--delay: 1s; --x: 25%;">💜</span>
+                <span class="float-heart" style="--delay: 2s; --x: 40%;">✨</span>
+                <span class="float-heart" style="--delay: 0.5s; --x: 60%;">💕</span>
+                <span class="float-heart" style="--delay: 1.5s; --x: 75%;">🌷</span>
+                <span class="float-heart" style="--delay: 2.5s; --x: 90%;">💖</span>
+            </div>
+        </section>
+    </main>
+
+    <div class="hearts-container" id="heartsContainer"></div>
+    <button class="music-btn" id="musicBtn" title="Включить музыку">🎵</button>
+    <script src="js/main.js"></script>
+</body>
+</html>

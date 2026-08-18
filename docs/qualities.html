@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какая ты? ✨</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Юл ✨</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="qualities.html">Какая ты?</a></li>
+                <li><a href="story.html">Наша история</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="quiz.html">Мини-игра</a></li>
+                <li><a href="final.html">Для тебя</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Какая ты? 🌟</h2>
+                <p class="section-subtitle fade-in">Вот что я вижу в тебе</p>
+
+                <div class="cards-grid">
+                    <div class="card glass fade-in" style="--delay: 0.1s">
+                        <div class="card-icon">🌷</div>
+                        <h3 class="card-title">Добрая</h3>
+                        <p class="card-text">Ты умеешь делать людям рядом с тобой теплее.</p>
+                    </div>
+
+                    <div class="card glass fade-in" style="--delay: 0.2s">
+                        <div class="card-icon">💬</div>
+                        <h3 class="card-title">Общительная</h3>
+                        <p class="card-text">С тобой всегда можно найти тему для разговора.</p>
+                    </div>
+
+                    <div class="card glass fade-in" style="--delay: 0.3s">
+                        <div class="card-icon">✨</div>
+                        <h3 class="card-title">Особенная</h3>
+                        <p class="card-text">Некоторых людей просто невозможно заменить.</p>
+                    </div>
+                </div>
+
+                <div class="section-nav fade-in">
+                    <a href="story.html" class="btn btn-primary">Наша история ➜</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="hearts-container" id="heartsContainer"></div>
+    <button class="music-btn" id="musicBtn" title="Включить музыку">🎵</button>
+    <script src="js/main.js"></script>
+</body>
+</html>

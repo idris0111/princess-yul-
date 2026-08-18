@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша история 📖</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Юл ✨</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="qualities.html">Какая ты?</a></li>
+                <li><a href="story.html">Наша история</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="quiz.html">Мини-игра</a></li>
+                <li><a href="final.html">Для тебя</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Наша история 📖</h2>
+                <p class="section-subtitle fade-in">Маленький путь, который мы прошли вместе</p>
+
+                <div class="timeline">
+                    <div class="timeline-item fade-in" style="--delay: 0.1s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-chapter">Глава 1</span>
+                            <h3 class="timeline-title">Как всё началось</h3>
+                            <p class="timeline-text">Место для твоего воспоминания о нашем начале...</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in" style="--delay: 0.2s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-chapter">Глава 2</span>
+                            <h3 class="timeline-title">Наши разговоры</h3>
+                            <p class="timeline-text">Место для твоего воспоминания о том, как мы разговаривали...</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in" style="--delay: 0.3s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-chapter">Глава 3</span>
+                            <h3 class="timeline-title">Моменты, которые я запомнил</h3>
+                            <p class="timeline-text">Место для твоего воспоминания о важных моментах...</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in" style="--delay: 0.4s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-chapter">Глава 4</span>
+                            <h3 class="timeline-title">Сегодня</h3>
+                            <p class="timeline-text">Сегодня я制作ил этот сайт специально для тебя. Каждая страница здесь — это подарок для тебя...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-nav fade-in">
+                    <a href="gallery.html" class="btn btn-primary">Галерея ➜</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="hearts-container" id="heartsContainer"></div>
+    <button class="music-btn" id="musicBtn" title="Включить музыку">🎵</button>
+    <script src="js/main.js"></script>
+</body>
+</html>

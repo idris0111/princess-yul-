@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-игра 🎮</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Юл ✨</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="qualities.html">Какая ты?</a></li>
+                <li><a href="story.html">Наша история</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="quiz.html">Мини-игра</a></li>
+                <li><a href="final.html">Для тебя</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Мини-игра 🎮</h2>
+                <p class="section-subtitle fade-in">Небольшое испытание для тебя</p>
+
+                <div class="quiz-wrapper" id="quizWrapper">
+                    <div class="quiz-container glass fade-in" id="quizContainer">
+                        <div class="quiz-progress">
+                            <div class="quiz-progress-bar" id="quizProgressBar"></div>
+                            <span class="quiz-progress-text" id="quizProgressText">1 / 5</span>
+                        </div>
+
+                        <div class="quiz-question" id="quizQuestion">
+                            <h3 class="quiz-question-text" id="quizQuestionText"></h3>
+                            <div class="quiz-options" id="quizOptions"></div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-result glass" id="quizResult" style="display: none;">
+                        <div class="quiz-result-icon">✨</div>
+                        <h3 class="quiz-result-title" id="quizResultTitle"></h3>
+                        <p class="quiz-result-text" id="quizResultText"></p>
+                        <button class="btn btn-primary" onclick="restartQuiz()">Пройти ещё раз 🔄</button>
+                    </div>
+                </div>
+
+                <div class="section-nav fade-in">
+                    <a href="final.html" class="btn btn-primary">Для тебя ➜</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="hearts-container" id="heartsContainer"></div>
+    <button class="music-btn" id="musicBtn" title="Включить музыку">🎵</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
